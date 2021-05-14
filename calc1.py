@@ -67,9 +67,24 @@ class Interpreter(object):
         # integer, create an INTEGER token, increment self.pos
         # index to point to the next character after the digit,
         # and return the INTEGER token
+        '''
+        # original code to deal with 1 digit numbers
         if current_char.isdigit():
             token = Token(INTEGER, int(current_char))
             self.pos += 1
+            return token
+        '''
+        if current_char.isdigit():
+            digit_buffer = ''
+            while current_char.isdigit(): # multi-digit number
+                digit_buffer += current_char
+                if self.pos == len(text) - 1:
+                    break;
+                else:
+                    self.pos += 1
+                    current_char = text[self.pos]
+            print("\t Integer detected: {0}".format(digit_buffer))
+            token = Token(INTEGER, int(digit_buffer));
             return token
 
         if current_char == '+':
