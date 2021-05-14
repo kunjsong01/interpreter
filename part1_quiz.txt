@@ -1,0 +1,17 @@
+Check your understanding
+
+    1. What is an interpreter?
+Execute the program one statement after another, without converting the entire source code to machine code in one go.
+    2. What is a compiler?
+Convert the entire high-level source code to low-level machine code in one go. The machine code is target specific.
+    3. What’s the difference between an interpreter and a compiler?
+As stated above.
+    4. What is a token?
+<Type, value>, where Type:=Integer|Keyword|Identifier..., value:=original string
+    5. What is the name of the process that breaks input apart into tokens?
+Lexical Analysis
+    6. What is the part of the interpreter that does lexical analysis called?
+Lexical Analyzer, Lexer
+    7. What are the other common names for that part of an interpreter or a compiler?
+Scanner, Tokenizer
+
