@@ -57,6 +57,11 @@ class Interpreter(object):
         # get a character at the position self.pos and decide
         # what token to create based on the single character
         current_char = text[self.pos]
+        # keep moving forward if encountering a space
+        while current_char.isspace():
+            print("\t whitespace detected at position: {0}".format(self.pos))
+            self.pos += 1
+            current_char = text[self.pos]
 
         # if the character is a digit then convert it to
         # integer, create an INTEGER token, increment self.pos
