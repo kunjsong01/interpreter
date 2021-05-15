@@ -21,3 +21,5 @@ Right-hand side
     7. What is the start symbol of a grammar?
 The non-terminal symbol on the left side of the FIRST rule is called the start symbol.
 
+
+Recall: rules to convert each grammar rule/production to code
