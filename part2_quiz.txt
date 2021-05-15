@@ -1,0 +1,13 @@
+Check your understanding:
+
+Set: order doesn't matter, no repetition
+Sequence: order matters
+Stream: a sequence of data elements
+
+    1. What is a lexeme?
+A sequence of characters that form a token.
+    2. What is the name of the process that finds the structure in the stream of tokens, or put differently, what is the name of the process that recognizes a certain phrase in that stream of tokens?
+Parsing. It refers to recognizing the structure in a stream of tokens.
+    3. What is the name of the part of the interpreter (compiler) that does parsing?
+Parser
+
