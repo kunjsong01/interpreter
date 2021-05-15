@@ -1,0 +1,23 @@
+Check your understanding:
+
+    1. What is a context-free grammar (grammar)?
+
+
+    2. How many rules / productions does the grammar have?
+Finite rules / productions.
+
+    3. What is a terminal? (Identify all terminals in the picture)
+Terminals are the symbols which cannot be replaced any more using the grammar rules (productions).
+
+    4. What is a non-terminal? (Identify all non-terminals in the picture)
+Non-terminals are the symbols which can be replaced using the grammar rules (productions).
+
+    5. What is a head of a rule? (Identify all heads / left-hand sides in the picture)
+Left-hand side
+
+    6. What is a body of the rule? (Identify all bodies / right-hand sides in the picture)
+Right-hand side
+
+    7. What is the start symbol of a grammar?
+The non-terminal symbol on the left side of the FIRST rule is called the start symbol.
+

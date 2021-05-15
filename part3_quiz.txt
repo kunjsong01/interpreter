@@ -1,0 +1,11 @@
+Check your understanding.
+
+    1. What is a syntax diagram?
+Graphical representation of a programming language's syntax rules. A DFA or NFA.
+
+    2. What is syntax analysis?
+Parsing
+
+    3. What is a syntax analyzer?
+Parser
+

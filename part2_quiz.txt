@@ -5,9 +5,13 @@ Sequence: order matters
 Stream: a sequence of data elements
 
     1. What is a lexeme?
-A sequence of characters that form a token.
+A sequence of characters that form a token. E.g. 155 is a lexeme of the token class INTEGER.
+
     2. What is the name of the process that finds the structure in the stream of tokens, or put differently, what is the name of the process that recognizes a certain phrase in that stream of tokens?
 Parsing. It refers to recognizing the structure in a stream of tokens.
+Parsing == syntax analysis
+
     3. What is the name of the part of the interpreter (compiler) that does parsing?
 Parser
+Parser == syntax analyzer
 
