@@ -1,0 +1,44 @@
+Check your understanding
+
+    1. What is a symbol?
+(Informal) an identifier of some program entity like a variable, subroutine, or built-in type.
+
+    2. Why do we need to track symbols?
+To make sure that when we assign a value to a variable the types are correct (type checking)
+To make sure that a variable is declared before it is used
+
+    3. What is a symbol table?
+A symbol table is an abstract data type (ADT) for tracking various symbols in source code.
+
+    4. What is the difference between defining a symbol and resolving/looking up the symbol?
+Two main operations to be performing with the symbol table:
+    1. storing symbols (define)
+    2. looking them up by name (lookup)
+
+The method define takes a symbol as a parameter and stores it internally in its _symbols ordered dictionary using the symbol’s name as a key and the symbol instance as a value.
+The method lookup takes a symbol name as a parameter and returns a symbol if it finds it or “None” if it doesn’t.
+
+    5. Given the following small Pascal program, what would be the contents of the symbol table, the global memory (the GLOBAL_MEMORY dictionary that is part of the Interpreter)?
+---
+PROGRAM Part11;
+VAR
+   x, y : INTEGER;
+BEGIN
+   x := 2;
+   y := 3 + x;
+END.
+---
+
+Symbol Table:
+Key         Value
+--------------------------------------------
+INTEGER     BuiltInTypeSymbol instance
+x           VarSymbol Instance
+            <x:INTEGER>
+y           VarSymbol Instance
+            <y:INTEGER>
+
+(Run-time) Global Memory:
+--------------------------------------------
+x       2
+y       3+x
